@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #fff8df;
+      --cream-light: #fffdf5;
+      --green-dark: #087a59;
+      --sky: #5ddfff;
+      --blue: #2268ff;
+      --ink: #102b3f;
+      --muted: #4d6673;
+      --line: rgba(23, 48, 71, 0.14);
+      --shadow: 0 28px 74px rgba(25, 118, 210, 0.2);
+      font-family: "DM Sans", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #d9f8ff 0%, #edfced 48%, var(--cream) 92%);
+      color: var(--ink);
+      font-family: "DM Sans", system-ui, sans-serif;
+      line-height: 1.7;
+    }
+
+    .nav {
+      position: fixed;
+      top: 24px;
+      left: 50%;
+      z-index: 10;
+      width: min(860px, calc(100% - 36px));
+      min-height: 62px;
+      padding: 10px 16px;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255, 255, 255, 0.72);
+      border-radius: 999px;
+      background: rgba(255, 253, 245, 0.9);
+      box-shadow: 0 14px 44px rgba(34, 104, 255, 0.12);
+      backdrop-filter: blur(18px);
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav-inner {
+      min-height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: var(--blue);
+      font-weight: 800;
+    }
+
+    .nav-link,
+    .nav-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+    }
+
+    .nav-link {
+      min-height: 38px;
+      padding: 10px 13px;
+      border-radius: 999px;
+    }
+
+    .nav-link:hover {
+      background: rgba(93, 223, 255, 0.24);
+      color: var(--blue);
+    }
+
+    .nav-button {
+      min-height: 42px;
+      padding: 0 20px;
+      border: 2px solid rgba(25, 118, 210, 0.16);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--ink);
+      font: 800 0.98rem/1 "DM Sans", system-ui, sans-serif;
+      box-shadow: 0 8px 18px rgba(25, 118, 210, 0.1);
+    }
+
+    .nav-button:hover {
+      background: var(--blue);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 28px rgba(29, 52, 52, 0.16);
+    }
+
+    main {
+      padding: 148px 0 110px;
+    }
+
+    h1 {
+      margin: 0 0 30px;
+      color: var(--ink);
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(3rem, 7vw, 5.8rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    .policy {
+      padding: clamp(24px, 5vw, 44px);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 24px 70px rgba(49, 95, 124, 0.14);
+    }
+
+    .policy p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: clamp(1.03rem, 1.6vw, 1.16rem);
+    }
+
+    .policy p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 620px) {
+      .nav {
+        top: 12px;
+        width: calc(100% - 24px);
+        min-height: 58px;
+        padding-inline: 10px;
+      }
+
+      .nav-inner {
+        gap: 8px;
+        font-size: 0.7rem;
+      }
+
+      .nav-link {
+        min-height: 38px;
+        padding-inline: 8px;
+      }
+
+      .nav-button {
+        min-height: 38px;
+        padding-inline: 12px;
+        font-size: 0.7rem;
+      }
+
+      main {
+        padding-top: 118px;
+      }
+
+      h1 {
+        margin-bottom: 24px;
+        font-size: clamp(2.85rem, 15vw, 4.4rem);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-link" href="index.html">Back to site</a>
+      <a class="nav-button" href="index.html#waitlist">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <section class="policy">
+        <p>We respect your privacy.</p>
+        <p>When you sign up on this website, we collect your email address to add you to our waitlist and notify you about early access to our product.</p>
+        <p>We will only use your email to contact you when early access becomes available. Only if you choose to participate in our customer interview, we will contact you about it as well.</p>
+        <p>We do not sell or share your personal information with third parties.</p>
+        <p>Your information may be stored using secure third-party services (such as website hosting or email tools) only to operate this website and communicate with you.</p>
+        <p>We retain your email address until we contact you about early access or until you request deletion. Our first email about product launch will include an option to unsubscribe from future messages. If you would like your data removed, you can contact us at: funscienceapp [at] gmail [dot] com.</p>
+        <p>Facebook Pixel on our Website</p>
+        <p>We use the 'visitor action pixels' from Facebook Inc. on our Website. This allows user behavior to be tracked after they have been redirected to our Website by clicking on a Facebook ad. This enables us to measure the effectiveness of Facebook ads for market research purposes. The data collected in this way is anonymous to us and we do not see individual users' personal data. This data is stored and processed by Facebook in accordance with Facebook's Data Usage Policy.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

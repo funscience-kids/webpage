@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "funscience.vercel.app" }],
+      "destination": "https://octonia.app/$1",
+      "permanent": true
+    }
+  ]
+}
