@@ -1,6 +1,6 @@
-# Octovia website
+# Octonia website
 
-Landing page and waitlist for **Octovia**, an interactive science workbook app for kids.
+Landing page and waitlist for **Octonia**, an interactive science workbook app for kids.
 
 **Live site: https://octonia.app**
 
