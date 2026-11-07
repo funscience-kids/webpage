@@ -100,6 +100,12 @@ a {
   stroke-linejoin: round;
 }
 
+.home-link .site-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
 .nav-button-join {
   margin-right: 0.25em;
 }
