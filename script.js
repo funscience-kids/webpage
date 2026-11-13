@@ -1,4 +1,4 @@
-const SUBMISSION_ENDPOINT = "https://script.google.com/macros/s/AKfycby_5Iy_QyVm1HdpUuOvkFAl_dy0y_HyC9XCSaTbtFPzQgf-FXKIKQR6gpFcDcZfrIFUgw/exec";
+const SUBMISSION_ENDPOINT = "https://script.google.com/macros/s/AKfycbydS2Bg8avipdyN9ObD9sRjy4jQtteDxLzXCw2B8j0XViLazN1S_UluCIEUFwT9bnrU0w/exec";
 const form = document.querySelector("#emailForm");
 const input = document.querySelector("#emailInput");
 const button = document.querySelector("#submitButton");
