@@ -1,212 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy</title>
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --cream: #fff8df;
-      --cream-light: #fffdf5;
-      --green-dark: #087a59;
-      --sky: #5ddfff;
-      --blue: #2268ff;
-      --ink: #102b3f;
-      --muted: #4d6673;
-      --line: rgba(23, 48, 71, 0.14);
-      --shadow: 0 28px 74px rgba(25, 118, 210, 0.2);
-      font-family: "DM Sans", system-ui, sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: linear-gradient(180deg, #d9f8ff 0%, #edfced 48%, var(--cream) 92%);
-      color: var(--ink);
-      font-family: "DM Sans", system-ui, sans-serif;
-      line-height: 1.7;
-    }
-
-    .nav {
-      position: fixed;
-      top: 24px;
-      left: 50%;
-      z-index: 10;
-      width: min(860px, calc(100% - 36px));
-      min-height: 62px;
-      padding: 10px 16px;
-      transform: translateX(-50%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid rgba(255, 255, 255, 0.72);
-      border-radius: 999px;
-      background: rgba(255, 253, 245, 0.9);
-      box-shadow: 0 14px 44px rgba(34, 104, 255, 0.12);
-      backdrop-filter: blur(18px);
-    }
-
-    .wrap {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .nav-inner {
-      min-height: 38px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      font-size: 0.92rem;
-      font-weight: 800;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-    }
-
-    a {
-      color: var(--blue);
-      font-weight: 800;
-    }
-
-    .nav-link,
-    .nav-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--ink);
-      text-decoration: none;
-      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
-    }
-
-    .nav-link {
-      min-height: 38px;
-      padding: 10px 13px;
-      border-radius: 999px;
-    }
-
-    .nav-link:hover {
-      background: rgba(93, 223, 255, 0.24);
-      color: var(--blue);
-    }
-
-    .nav-button {
-      min-height: 42px;
-      padding: 0 20px;
-      border: 2px solid rgba(25, 118, 210, 0.16);
-      border-radius: 999px;
-      background: #ffffff;
-      color: var(--ink);
-      font: 800 0.98rem/1 "DM Sans", system-ui, sans-serif;
-      box-shadow: 0 8px 18px rgba(25, 118, 210, 0.1);
-    }
-
-    .nav-button:hover {
-      background: var(--blue);
-      color: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 16px 28px rgba(29, 52, 52, 0.16);
-    }
-
-    main {
-      padding: 148px 0 110px;
-    }
-
-    h1 {
-      margin: 0 0 30px;
-      color: var(--ink);
-      font-family: "Fraunces", Georgia, serif;
-      font-size: clamp(3rem, 7vw, 5.8rem);
-      line-height: 1.05;
-      letter-spacing: 0;
-      text-align: center;
-    }
-
-    .policy {
-      padding: clamp(24px, 5vw, 44px);
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      background: rgba(255, 255, 255, 0.72);
-      box-shadow: 0 24px 70px rgba(49, 95, 124, 0.14);
-    }
-
-    .policy p {
-      margin: 0 0 18px;
-      color: var(--muted);
-      font-size: clamp(1.03rem, 1.6vw, 1.16rem);
-    }
-
-    .policy p:last-child {
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 620px) {
-      .nav {
-        top: 12px;
-        width: calc(100% - 24px);
-        min-height: 58px;
-        padding-inline: 10px;
-      }
-
-      .nav-inner {
-        gap: 8px;
-        font-size: 0.7rem;
-      }
-
-      .nav-link {
-        min-height: 38px;
-        padding-inline: 8px;
-      }
-
-      .nav-button {
-        min-height: 38px;
-        padding-inline: 12px;
-        font-size: 0.7rem;
-      }
-
-      main {
-        padding-top: 118px;
-      }
-
-      h1 {
-        margin-bottom: 24px;
-        font-size: clamp(2.85rem, 15vw, 4.4rem);
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy | Octonia</title>
+  <meta name="description" content="How Octonia handles data: children's progress stays on the device, and the website keeps only a parent's email for the waitlist.">
+  <link rel="canonical" href="https://octonia.app/privacy.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="nav" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a class="nav-link" href="index.html">Back to site</a>
-      <a class="nav-button" href="index.html#waitlist">Join Waitlist</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Octonia home"><img src="images/logo-orchid.svg" alt="" width="28" height="44"><span>Octonia</span></a>
+      <a class="button button-small button-quiet" href="index.html#waitlist">Get notified</a>
     </div>
-  </nav>
+  </header>
 
-  <main>
-    <div class="wrap">
-      <h1>Privacy Policy</h1>
-      <section class="policy">
-        <p>We respect your privacy.</p>
-        <p>When you sign up on this website, we collect your email address to add you to our waitlist and notify you about early access to our product.</p>
-        <p>We will only use your email to contact you when early access becomes available. Only if you choose to participate in our customer interview, we will contact you about it as well.</p>
-        <p>We do not sell or share your personal information with third parties.</p>
-        <p>Your information may be stored using secure third-party services (such as website hosting or email tools) only to operate this website and communicate with you.</p>
-        <p>We retain your email address until we contact you about early access or until you request deletion. Our first email about product launch will include an option to unsubscribe from future messages. If you would like your data removed, you can contact us at: funscienceapp [at] gmail [dot] com.</p>
-        <p>Facebook Pixel on our Website</p>
-        <p>We use the 'visitor action pixels' from Facebook Inc. on our Website. This allows user behavior to be tracked after they have been redirected to our Website by clicking on a Facebook ad. This enables us to measure the effectiveness of Facebook ads for market research purposes. The data collected in this way is anonymous to us and we do not see individual users' personal data. This data is stored and processed by Facebook in accordance with Facebook's Data Usage Policy.</p>
-      </section>
+  <main class="container policy-wrap">
+    <p class="eyebrow">Privacy</p>
+    <h1>Privacy Policy</h1>
+    <p class="policy-date">Last updated: November 11, 2026</p>
+
+    <section class="policy-summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">The short version</h2>
+      <ul>
+        <li><strong>In the app:</strong> your child’s progress stays on your iPad. No ads, no accounts, no analytics, no tracking.</li>
+        <li><strong>On this website:</strong> we keep only the email a grown-up gives us for the waitlist. No cookies, no trackers.</li>
+        <li><strong>Questions or deletion:</strong> write to <a href="mailto:privacy@octonia.app">privacy@octonia.app</a>.</li>
+      </ul>
+    </section>
+
+    <div class="policy">
+      <p>This policy explains what information Octonia (“we”, “us”) handles in the Octonia Science Workbook app (“the app”) and on this website, octonia.app. Octonia is made for children, and this website is for their parents and other grown-ups.</p>
+
+      <h2>1. The app</h2>
+      <h3>What stays on the device</h3>
+      <p>To work, the app keeps a small amount of information on the device where it is installed:</p>
+      <ul>
+        <li>each child profile’s first name or nickname and the emoji avatar the child picks (up to four profiles);</li>
+        <li>which questions were answered, how many tries they took, and when — so the app can show stars, bring back tricky questions, and fill the grown-ups area;</li>
+        <li>app settings, such as whether sound is muted.</li>
+      </ul>
+      <p>This information is stored only on that device. It is not sent to us or to anyone else. We cannot see it, and we cannot recover it for you.</p>
+
+      <h3>What the app does not do</h3>
+      <ul>
+        <li>No accounts, logins or passwords.</li>
+        <li>No ads.</li>
+        <li>No analytics, crash-reporting or tracking tools, and no third-party SDKs that collect data.</li>
+        <li>No use of the camera, microphone or location.</li>
+        <li>No chat, sharing or links to social media for children.</li>
+      </ul>
+
+      <h3>Read-aloud voice</h3>
+      <p>Questions are read aloud with voice recordings that ship inside the app, or, when a recording is not available, with the text-to-speech voice built into the device. The app never records your child’s voice.</p>
+
+      <h3>How to delete your child’s data</h3>
+      <ul>
+        <li><strong>One child:</strong> open the grown-ups area from the home screen, answer the grown-up question, go to <em>Manage kids</em>, and tap <em>Delete</em> next to the child. This erases that child’s profile and progress from the device.</li>
+        <li><strong>Everything:</strong> delete the app from the device. All of its data is removed with it.</li>
+      </ul>
+
+      <h2>2. This website</h2>
+      <h3>Your email, for the waitlist</h3>
+      <p>If you join the waitlist, we receive the email address you type in, and the time you sent it. We use it only to tell you when Octonia launches and to invite you to try the beta. We do not sell it, rent it, or use it for advertising.</p>
+      <p>The form sends your email to a Google Apps Script form handler, a Google service that saves it in our team’s Google account. Emails you send to our @octonia.app addresses are forwarded to that same account.</p>
+      <p>We keep your email until you ask us to delete it, or until we no longer need it for launch and beta invitations. Every email we send has a way to unsubscribe.</p>
+
+      <h3>No cookies, no trackers</h3>
+      <p>This website sets no cookies and uses no analytics, advertising pixels or tracking scripts. Its fonts and images are served from octonia.app itself, not from third parties.</p>
+      <p>Our hosting provider, Vercel, may keep standard technical logs (such as IP address and browser type) to deliver the site and keep it secure. We do not use them to identify or track visitors.</p>
+
+      <h2>3. Children’s privacy</h2>
+      <p>The app does not collect personal information from children: everything a child does in it stays on the device. This website is meant for adults, and we do not knowingly collect information from children here. If you believe a child has sent us their email, write to us and we will delete it.</p>
+      <p>If we ever plan to change how the app handles children’s information — for example, to add syncing between devices — we will update this policy first and ask for a parent’s permission before any child’s information leaves the device.</p>
+
+      <h2>4. Your choices</h2>
+      <p>You can ask us at any time to see, correct, or delete the email you gave us. Write to <a href="mailto:privacy@octonia.app">privacy@octonia.app</a>, and we will reply within 30 days.</p>
+
+      <h2>5. Changes to this policy</h2>
+      <p>If we change this policy, we will post the new version on this page and update the date at the top.</p>
+
+      <h2>6. Contact</h2>
+      <p>Octonia<br><a href="mailto:privacy@octonia.app">privacy@octonia.app</a></p>
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="images/logo-orchid.svg" alt="" width="24" height="38"><span>Octonia</span></a>
+      </div>
+      <div class="footer-bottom">
+        <a href="mailto:hello@octonia.app">hello@octonia.app</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <span>© 2026 Octonia</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
