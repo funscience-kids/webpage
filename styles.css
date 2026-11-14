@@ -37,14 +37,11 @@
 .policy-wrap{max-width:760px;padding-block:48px 56px}.policy-wrap h1{font-size:clamp(2.4rem,5vw,3.6rem);margin-bottom:6px}.policy-date{margin:0;font-size:.85rem;color:#68596d}.policy-summary{margin-top:30px;padding:24px 28px;background:#f2e7fd;border-radius:22px}.policy-summary h2{font-size:1.35rem;margin-bottom:10px;letter-spacing:-.01em}.policy-summary ul{margin:0;padding-left:1.1em}.policy-summary li{margin:6px 0}.policy{margin-top:34px;line-height:1.65}.policy h2{font-size:clamp(1.45rem,2.4vw,1.75rem);margin:42px 0 10px;letter-spacing:-.01em}.policy h3{font-size:1.05rem;margin:24px 0 6px}.policy p{margin:0 0 12px}.policy ul{margin:0 0 12px;padding-left:1.2em}.policy li{margin:6px 0}.policy a,.policy-summary a{color:var(--purple)}.policy li::marker,.policy-summary li::marker{color:var(--purple)}
 @media(max-width:640px){.spark{display:none}}
 
-/* Colour: headline accents in the octopus's plum; logo and buttons stay violet */
-:root{--plum:#86546e}
-em,h1 em,.curriculum-story h2 em,.learning-design h3 em{color:var(--plum)}
 
 /* Example questions: the speaker shows each question is read aloud */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .example h3.question{display:flex;gap:12px;align-items:flex-start}
-.hear{flex:none;display:grid;place-items:center;width:36px;height:36px;margin-top:-3px;border-radius:50%;background:#efdbe7;color:var(--plum)}
+.hear{flex:none;display:grid;place-items:center;width:36px;height:36px;margin-top:-3px;border-radius:50%;background:#eee6ff;color:var(--purple)}
 
 /* Hero octopus: the app's own frames (rest, smile/blink, dance) */
 .hero-art .octo{position:relative;z-index:1;height:462px;aspect-ratio:543/724;margin:-41px 0;filter:drop-shadow(0 18px 12px #33334a22);transform-origin:50% 92%;animation:octo-breathe 4.4s ease-in-out infinite}
