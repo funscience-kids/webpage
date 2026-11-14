@@ -1,0 +1,6 @@
+/* Test: a cooler, more violet octopus (colour shift only on this page) */
+html[data-hue="1"] .hero-art .octo{filter:hue-rotate(-22deg) saturate(1.12) drop-shadow(0 18px 12px #33334a22)}
+html[data-hue="2"] .hero-art .octo{filter:hue-rotate(-42deg) saturate(1.25) drop-shadow(0 18px 12px #33334a22)}
+.hue-switch{position:fixed;left:50%;bottom:16px;z-index:50;transform:translateX(-50%);display:flex;gap:6px;padding:6px;border-radius:99px;background:#fff;box-shadow:0 6px 24px #28203733}
+.hue-switch button{border:0;border-radius:99px;padding:10px 16px;min-height:44px;background:#f3edff;color:#4f326d;font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.hue-switch button[aria-pressed="true"]{background:var(--purple);color:#fff}
