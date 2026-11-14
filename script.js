@@ -78,3 +78,50 @@ if (ngssTrigger && ngssHelp) {
     }
   });
 }
+
+// Hero octopus: blinks, now and then smiles, and every so often does a short dance —
+// the same frames and motions as the octopus in the app. Off for reduced motion.
+const octo = document.querySelector('.octo');
+if (octo && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const dance = octo.querySelector('.octo-dance');
+  const frames = [0, 1, 2, 3, 4, 5, 6, 7].map(i => `images/octopus/dance-${i}.png`);
+  let visible = true;
+  let danceReady = false;
+  const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const rand = (min, max) => min + Math.random() * (max - min);
+  const until = async () => { while (!visible || document.hidden) await wait(500); };
+
+  new IntersectionObserver(entries => { visible = entries[0].isIntersecting; }).observe(octo);
+  window.addEventListener('load', () => {
+    Promise.all(frames.map(src => { const img = new Image(); img.src = src; return img.decode(); }))
+      .then(() => { danceReady = true; }, () => {});
+  });
+
+  async function blink() {
+    octo.classList.add('is-smile'); await wait(140);
+    octo.classList.remove('is-smile');
+    if (Math.random() < 0.25) { await wait(180); octo.classList.add('is-smile'); await wait(140); octo.classList.remove('is-smile'); }
+  }
+  async function smile() {
+    octo.classList.add('is-smile', 'is-happy'); await wait(1600);
+    octo.classList.remove('is-smile', 'is-happy');
+  }
+  async function doDance() {
+    octo.classList.add('is-dance');
+    for (let step = 0; step < 16; step++) { dance.src = frames[step % 8]; await wait(160); }
+    octo.classList.remove('is-dance');
+  }
+
+  (async () => {
+    let next = 0;
+    await wait(2500);
+    for (;;) {
+      await until();
+      next++;
+      if (next % 6 === 0 && danceReady) await doDance();
+      else if (next % 3 === 0) await smile();
+      else await blink();
+      await wait(rand(2600, 4800));
+    }
+  })();
+}
