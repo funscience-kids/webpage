@@ -57,3 +57,7 @@
 @keyframes octo-sway{from{transform:translate(-3px,2px) rotate(-2deg) scale(.99)}to{transform:translate(3px,-5px) rotate(2deg) scale(1.025)}}
 @media(max-width:760px){.hero-art .octo{height:231px;margin:-20px 0}}
 @media(prefers-reduced-motion:reduce){.hero-art .octo,.octo-move,.octo.is-dance .octo-move{animation:none;transition:none}}
+
+/* Buttons: the app icon's violet-to-plum gradient */
+.button,.example-selector button[aria-pressed="true"]{background:linear-gradient(180deg,#8735f1 0%,#80295e 100%)}
+.button:hover{background:linear-gradient(180deg,#7a2ade 0%,#6f2252 100%)}
