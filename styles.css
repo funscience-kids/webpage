@@ -44,7 +44,7 @@
 .hear{flex:none;display:grid;place-items:center;width:44px;height:44px;margin-top:-7px;padding:0;border:0;border-radius:50%;background:#eee6ff;color:var(--purple);cursor:pointer;transition:background .18s,transform .18s}
 .hear:hover{background:#e2d3ff;transform:scale(1.06)}
 .hear:focus-visible{outline:3px solid var(--purple);outline-offset:2px}
-.hear.is-playing{background:linear-gradient(180deg,#8735f1,#80295e);color:#fff;animation:hear-pulse 1.1s ease-in-out infinite}
+.hear.is-playing{background:var(--purple);color:#fff;animation:hear-pulse 1.1s ease-in-out infinite}
 @keyframes hear-pulse{50%{box-shadow:0 0 0 7px #8735f126}}
 @media(prefers-reduced-motion:reduce){.hear.is-playing{animation:none}}
 .device-note{margin:12px 0 0;font-size:14px;font-weight:600;color:#3f3550}
@@ -57,6 +57,3 @@
 .octo.is-blink .octo-smile{opacity:1}
 @media(max-width:760px){.hero-art .octo{height:231px;margin:-20px 0}}
 
-/* Buttons: the app icon's violet-to-plum gradient */
-.button,.example-selector button[aria-pressed="true"]{background:linear-gradient(180deg,#8735f1 0%,#80295e 100%)}
-.button:hover{background:linear-gradient(180deg,#7a2ade 0%,#6f2252 100%)}
