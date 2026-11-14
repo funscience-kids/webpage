@@ -1,0 +1,23 @@
+/* Test: white first screen; the colour comes from planet Octonia and the topic planets on their orbit */
+.hero{background:#fff;overflow:hidden}
+.hero-art .orbit{position:absolute;inset:-4% -6%;width:112%;height:108%;z-index:0}
+.planet-home{position:absolute;left:50%;top:56%;width:min(100%,400px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;z-index:0;background:radial-gradient(circle at 34% 28%,#fbf6ff 0,#eadcff 34%,#d4bcfb 68%,#c3a4f6 100%);box-shadow:inset -18px -22px 0 #b893f31f}
+.planet-home::after{content:"";position:absolute;inset:58% 8% 24% 6%;border-radius:50%;background:#ffc9e166;transform:rotate(-8deg)}
+.mini{position:absolute;z-index:2;width:clamp(40px,13%,66px);aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 6px 14px #2820371f;overflow:hidden;display:grid;place-items:center}
+.hero-art .mini img{position:static;width:86%;height:86%;object-fit:contain;filter:none}
+.mini-a{left:-2%;top:30%;width:clamp(48px,16%,80px);outline:3px solid #8734ed;outline-offset:3px}
+.mini-b{right:0;top:10%}
+.mini-c{right:-4%;top:62%}
+.mini-d{left:6%;top:76%}
+@media(max-width:760px){.planet-home{width:200px}}
+/* Test: night sky over planet Octonia */
+.hero{position:relative;background-color:#1f1739;background-image:radial-gradient(1.6px 1.6px at 10% 20%,#fff 50%,transparent 100%),radial-gradient(1.2px 1.2px at 30% 70%,#fff 50%,transparent 100%),radial-gradient(2px 2px at 55% 15%,#ffe7a3 50%,transparent 100%),radial-gradient(1.2px 1.2px at 80% 85%,#fff 50%,transparent 100%),radial-gradient(1.6px 1.6px at 90% 35%,#fff 50%,transparent 100%),radial-gradient(1.2px 1.2px at 20% 90%,#fff 50%,transparent 100%),radial-gradient(1.4px 1.4px at 65% 55%,#ffd1e8 50%,transparent 100%),radial-gradient(120% 90% at 75% 40%,#3b2a66 0,#241a42 55%,#1b1433 100%);background-size:260px 220px,260px 220px,260px 220px,260px 220px,260px 220px,260px 220px,260px 220px,100% 100%}
+.hero h1{color:#fff}
+.hero h1 em{color:#cfa8ff}
+.hero .intro{color:#e8def8}
+.hero .device-note{color:#cbbde6}
+
+.hero-art .orbit ellipse{stroke:#cfa8ff}
+.planet-home{background:radial-gradient(circle at 34% 28%,#f3e8ff 0,#c9a8ff 40%,#8e5ee8 80%,#6c3fcc 100%);box-shadow:0 0 60px #9c6cff55}
+.mini{box-shadow:0 0 0 3px #ffffff22,0 6px 16px #0006}
+.mini-a{outline-color:#ffb7d7}
