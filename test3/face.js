@@ -1,4 +1,4 @@
-// Test: one small gesture at a time (brows, smile, upper tentacles), by swapping whole frames like the app does.
+// Test: one small gesture at a time (brows, smile), by swapping whole frames like the app does.
 // Blinking keeps running on its own (script.js) and sits on top of every frame.
 (() => {
   const octo = document.querySelector('.octo');
@@ -12,8 +12,6 @@
   const gestures = [
     [['smile-1', step], ['smile-2', 1500], ['smile-1', step], ['rest', 0]],
     [['brows-1', step], ['brows-2', 1000], ['brows-1', step], ['rest', 0]],
-    [['wave-1', step], ['wave-2', step * 2], ['wave-3', step], ['rest', step],
-     ['wave-1', step], ['wave-2', step * 2], ['wave-3', step], ['rest', 0]],
   ];
   (async () => {
     await wait(2500);
