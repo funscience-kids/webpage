@@ -1,0 +1,2 @@
+/* Test: no planet disc. The octopus is the centre of Octonia; a soft glow replaces the planet. */
+.hero-art .glow{position:absolute;z-index:1;left:60px;top:40px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,#8f6be04d 0%,#6f4fc226 40%,transparent 70%)}
