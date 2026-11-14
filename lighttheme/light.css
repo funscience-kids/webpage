@@ -6,3 +6,4 @@
 .hero-art .planet::before{border-color:#ffffff70}
 .hero-art .octo{filter:hue-rotate(-42deg) saturate(1.25) drop-shadow(0 18px 12px #33334a26)}
 .hero-art .topic-moon{border-color:#c5adf3;background:radial-gradient(circle at 30% 25%,#fff,#ece3fa 75%,#d6c6ef);box-shadow:0 6px 16px #5b3fb02e}
+.hero-art .glow{background:radial-gradient(circle,#b596f259 0%,#c9b2f72e 40%,transparent 70%)}
