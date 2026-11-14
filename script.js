@@ -94,3 +94,26 @@ if (octo && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     }
   })();
 }
+
+// Example questions: the speaker plays the question as it sounds in the app.
+let hearAudio = null;
+let hearButton = null;
+function stopHear() {
+  if (hearAudio) { hearAudio.pause(); hearAudio = null; }
+  if (hearButton) { hearButton.classList.remove('is-playing'); hearButton.setAttribute('aria-pressed', 'false'); hearButton = null; }
+}
+document.querySelectorAll('.hear[data-audio]').forEach(button => {
+  button.setAttribute('aria-pressed', 'false');
+  button.addEventListener('click', () => {
+    const wasThis = hearButton === button;
+    stopHear();
+    if (wasThis) return;
+    hearAudio = new Audio(button.dataset.audio);
+    hearButton = button;
+    button.classList.add('is-playing');
+    button.setAttribute('aria-pressed', 'true');
+    hearAudio.addEventListener('ended', stopHear);
+    hearAudio.play().catch(stopHear);
+  });
+});
+document.querySelectorAll('.example-selector button').forEach(b => b.addEventListener('click', stopHear));
