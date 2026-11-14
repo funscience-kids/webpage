@@ -58,3 +58,5 @@
 @media(max-width:760px){.hero-art .octo{height:231px;margin:-20px 0}}
 
 .right-mark{display:inline-block;margin-left:6px;padding:1px 9px;border-radius:99px;background:#dff5e6;color:#1f7a3f;font-weight:700}
+.miss-mark{display:inline-block;margin-left:6px;padding:1px 9px;border-radius:99px;background:#f3eef6;color:#7a6a80;font-weight:600}
+.miss-mark::before{content:"✗ ";font-size:.85em}
