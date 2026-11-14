@@ -1,0 +1,8 @@
+/* Light version of the planet hero: the pale mint background from /test6, dark text. */
+.hero{background:#effbf7;background-image:none}
+.hero h1{color:var(--ink)}.hero h1 em{color:var(--purple)}.hero .intro{color:var(--ink)}.hero .device-note{color:#3f3550}
+.hero-art .orbit ellipse{stroke:#9a6cf0;opacity:1}
+.hero-art .planet{background:radial-gradient(circle at 38% 28%,#ece2ff 0%,#c4abf6 46%,#9f80e4 78%,#7c5ec8 100%);box-shadow:inset -22px -28px 35px #5b3fb02e,0 18px 34px #5b3fb024}
+.hero-art .planet::before{border-color:#ffffff70}
+.hero-art .octo{filter:hue-rotate(-42deg) saturate(1.25) drop-shadow(0 18px 12px #33334a26)}
+.hero-art .topic-moon{border-color:#c5adf3;background:radial-gradient(circle at 30% 25%,#fff,#ece3fa 75%,#d6c6ef);box-shadow:0 6px 16px #5b3fb02e}
