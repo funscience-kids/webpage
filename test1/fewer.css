@@ -1,9 +1,0 @@
-/* Test: fewer colours — mint hero, the icon's violet gradient, white, one pale lavender */
-.curriculum-story{background:#f7f3fe}
-.topics{background:#fff}
-.animals{background:#f7f3fe;border:1px solid #e6dcf6}
-.upcoming{background:#fff;border:1px solid #e6dcf6}
-.benefits article,.benefits article:nth-child(2),.benefits article:nth-child(3){background:#f7f3fe}
-.voice-dot{background:#d7c0fa}.tap-dot{background:#b48af0}.why-dot{background:#8735f1}
-.form-card{background:#f7f3fe;border:1px solid #e6dcf6}
-.example-selector button{background:#f3edff}

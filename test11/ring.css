@@ -1,6 +1,0 @@
-/* Test: no planet, the octopus is the planet. Its ring passes behind the head and in front of the arms (Saturn-style), plus a faint inner ring and sparkles. */
-.hero-art .orbit .inner{stroke:#cfb6ff;opacity:.35;stroke-dasharray:2 7;stroke-linecap:round}
-.hero-art .orbit-front,.hero-art .sparks{position:absolute;inset:0;width:560px;height:520px;overflow:visible;pointer-events:none}
-.hero-art .orbit-front{z-index:2}.hero-art .orbit-front path{fill:none;stroke:#e6d6ff;stroke-width:2;vector-effect:non-scaling-stroke}
-.hero-art .sparks{z-index:0}.hero-art .sparks path{fill:#ffe7a3}.hero-art .sparks circle{fill:#fff;opacity:.8}
-.hero-art .orbit ellipse:not(.inner){stroke-width:2}

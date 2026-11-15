@@ -1,3 +1,0 @@
-/* Test: app-style frame swaps. Each frame is the rest picture with one part changed, so nothing else moves. */
-.octo .octo-frame{opacity:0}
-.octo .octo-frame.on{opacity:1}
