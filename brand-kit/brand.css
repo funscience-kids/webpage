@@ -18,3 +18,4 @@
 @media(max-width:760px){.logo-grid{grid-template-columns:1fr 1fr}.type-grid{grid-template-columns:1fr}.logo-preview{height:140px}}
 @media(max-width:420px){.logo-grid{grid-template-columns:1fr}}
 .c8734ed{background:#8734ED!important}.c8835f4{background:#8835F4!important}.c6517b8{background:#6517B8!important}.c282037{background:#282037!important}.c68ddbd{background:#68DDBD!important}.cffb7d7{background:#FFB7D7!important}.ccaeafa{background:#CAEAFA!important}
+.lockups .logo-preview img{max-width:84%;max-height:120px}.lockups .logo-card h3{margin-bottom:12px}
