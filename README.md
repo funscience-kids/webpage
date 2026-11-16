@@ -18,6 +18,7 @@ These addresses all redirect permanently to it:
 | `/lighttheme` | `lighttheme/index.html` + `lighttheme/light.css` | A light-colored version of the main page, kept for comparison |
 | `/privacy` | `privacy.html` | Privacy Policy |
 | `/terms` | `terms.html` | Terms of Use |
+| `/logotest` | `logotest/` | Test: the header with the mark alone, without the icon square |
 
 Every page footer links to Privacy and Terms of Use. Keep those links when adding a page.
 
@@ -31,6 +32,7 @@ Every page footer links to Privacy and Terms of Use. Keep those links when addin
 | `script.js` | The testing sign-up form and page interactions |
 | `fonts.css`, `fonts/` | Self-hosted fonts (DM Sans, Fraunces) with their licenses |
 | `images/`, `audio/` | Pictures and the sample question recordings |
+| `brand-kit/` | Logo files: the app icon and the question-mark mark in purple, black and white, as SVG and 1024px PNG. `octonia-icon-purple.svg` is the source; the site's favicons and header icon are made from it |
 | `vercel.json` | Clean URLs, security headers, and the `funscience.vercel.app` redirect |
 
 It's a plain static site. There is no build step and nothing to install.
