@@ -18,6 +18,7 @@ These addresses all redirect permanently to it:
 | `/lighttheme` | `lighttheme/index.html` + `lighttheme/light.css` | A light-colored version of the main page, kept for comparison |
 | `/privacy` | `privacy.html` | Privacy Policy |
 | `/terms` | `terms.html` | Terms of Use |
+| `/brand-kit` | `brand-kit/index.html` + `brand.css`, `brand.js` | Brand kit: logos to download, colors, fonts (noindex, not linked yet) |
 | `/logotest` | `logotest/` | Test: the header with the mark alone, without the icon square |
 
 Every page footer links to Privacy and Terms of Use. Keep those links when adding a page.
