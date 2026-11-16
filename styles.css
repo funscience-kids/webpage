@@ -69,3 +69,4 @@ p,li,figcaption{text-wrap:pretty}
 .btn-arrow{flex:none}
 /* Sticky header: logo returns to the top, sign-up button stays in reach. */
 header{position:sticky;top:0;z-index:50;transition:box-shadow .2s}header.scrolled{box-shadow:0 1px 0 #ece6f2,0 6px 16px #2820370f}html{scroll-padding-top:84px}
+.session-details{margin:4px 0 18px;font-size:.97rem}.session-details summary{min-height:44px;color:var(--purple)}.session-details p{margin:6px 0 0;color:#3f3550}
